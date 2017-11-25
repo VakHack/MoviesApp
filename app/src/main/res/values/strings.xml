@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+
+    <string name="filmName">Name</string>
+    <string name="filmYear">1980</string>
+
+</resources>
