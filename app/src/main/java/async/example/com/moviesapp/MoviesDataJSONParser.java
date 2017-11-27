@@ -1,5 +1,7 @@
 package async.example.com.moviesapp;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,8 +24,8 @@ public class MoviesDataJSONParser {
 
             for(int i = 0; i < arr.length(); ++i){
 
-                JSONObject obj = arr.getJSONObject(i);
-                MovieData data = new MovieData(obj.getString("name"), obj.getString("picURL"),obj.getInt("year"));
+                JSONObject moviesObj = arr.getJSONObject(i);
+                MovieData data = new MovieData(moviesObj.getString("name"), moviesObj.getString("picURL"), Integer.valueOf(moviesObj.getString("year")));
 
                 moviesList.add(data);
             }

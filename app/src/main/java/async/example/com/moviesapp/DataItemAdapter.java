@@ -28,6 +28,13 @@ public class DataItemAdapter extends RecyclerView.Adapter<DataItemAdapter.ViewHo
         this.context = context;
     }
 
+    public void setMovies(List<MovieData> movies) {
+        this.movies.clear();
+        this.movies.addAll(movies);
+
+        notifyDataSetChanged();
+    }
+
     @Override
     public DataItemAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 

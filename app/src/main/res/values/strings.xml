@@ -3,5 +3,6 @@
 
     <string name="filmName">Name</string>
     <string name="filmYear">1980</string>
+    <string name="action_search">search</string>
 
 </resources>
